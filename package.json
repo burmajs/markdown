@@ -13,8 +13,12 @@
   "license": "ISC",
   "author": "",
   "type": "module",
-  "main": "index.js",
-  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
   "scripts": {},
   "dependencies": {
     "@burmajs/frontmatter": "^0.2.0",
